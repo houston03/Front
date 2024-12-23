@@ -1,0 +1,406 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  height:100%;
+  background-color: rgba(220,220,230,0.8);
+}
+
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+h1, p {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+
+  text-decoration: none;
+  display: block;
+}
+h3 {
+  padding: 18px;
+  font-family: "Yu Gothic UI Light";
+
+  color: rgba(0, 35, 122, 0.5);
+
+  text-decoration: none;
+  display: block;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.main-container {
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* HEADING */
+
+.heading {
+  text-align: center;
+}
+
+.heading__title {
+  font-weight: 600;
+}
+
+.heading__credits {
+  margin: 10px 0px;
+  color: #888888;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+.heading__link {
+  text-decoration: none;
+}
+
+.heading__credits .heading__link {
+  color: inherit;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+.card__link:hover::after {
+  width: 100%;
+}
+
+.card__exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+
+.card__title {
+  grid-row: 3/4;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card__apply {
+  grid-row: 4/5;
+  align-self: center;
+}
+
+/* CARD BACKGROUNDS */
+
+.card-1 {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.6)),
+    url('https://avatanplus.com/files/resources/original/5ac0dfff9a1c9162816afe8f.jpg') no-repeat center
+    ;
+  border: .2em solid white;
+  filter: alpha(opacity=0.5);
+}
+.card-2 {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.6)),
+    url('https://klike.net/uploads/posts/2022-09/1663741133_v.jpg') no-repeat center
+    ;
+  border: .2em solid white;
+  filter: alpha(opacity=0.5);
+}
+.card-3 {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.6)),
+    url('https://sotni.ru/wp-content/uploads/2023/08/zelenyi-fon-178.webp') no-repeat center
+    ;
+  border: .2em solid white;
+  filter: alpha(opacity=0.5);
+}
+.card-4 {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.6)),
+    url('https://img3.akspic.ru/attachments/originals/0/8/4/0/1/110480-rozovyj-lepestok-purpur-krasnyj_cvet-krupnyj_plan-2560x1600.jpg') no-repeat center
+    ;
+  border: .2em solid white;
+  filter: alpha(opacity=0.5);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+.container2 {
+    content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+
+
+  background-color:rgba(180,180,200,0.65)
+
+    ;
+  background-size: cover;
+  border-top: .2em solid white;
+}
+.simple-bar-chart{
+  --line-count: 10;
+  --line-color: currentcolor;
+  --line-opacity: 0.25;
+  --item-gap: 2%;
+  --item-default-color: #060606;
+
+  height: 10rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--item-gap);
+  align-items: end;
+  padding-inline: var(--item-gap);
+  --padding-block: 1.5rem; /*space for labels*/
+  padding-block: var(--padding-block);
+  position: relative;
+  isolation: isolate;
+}
+
+.simple-bar-chart::after{
+  content: "";
+  position: absolute;
+  inset: var(--padding-block) 0;
+  z-index: -1;
+  --line-width: 1px;
+  --line-spacing: calc(100% / var(--line-count));
+  background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
+  box-shadow: 0 var(--line-width) 0 var(--line-color);
+  opacity: var(--line-opacity);
+}
+.simple-bar-chart > .item{
+  height: calc(1% * var(--val));
+  background-color: var(--clr, var(--item-default-color));
+  position: relative;
+  animation: item-height 1s ease forwards
+}
+@keyframes item-height { from { height: 0 } }
+
+.simple-bar-chart > .item > * { position: absolute; text-align: center }
+.simple-bar-chart > .item > .label { inset: 100% 0 auto 0 }
+.simple-bar-chart > .item > .value { inset: auto 0 100% 0 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container5{
+
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  max-width: 1050px;
+}
+section{
+  background: #fff;
+  border-radius: 7px;
+}
+.tools-board{
+  width: 210px;
+  padding: 15px 22px 0;
+}
+.tools-board .row{
+  margin-bottom: 20px;
+}
+.row .options{
+  list-style: none;
+  margin: 10px 0 0 5px;
+}
+.row .options .option{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.option:is(:hover, .active) img{
+  filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
+}
+.option :where(span, label){
+  color: #5A6168;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.option:is(:hover, .active) :where(span, label){
+  color: #4A98F7;
+}
+.option #fill-color{
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+}
+#fill-color:checked ~ label{
+  color: #4A98F7;
+}
+.option #size-slider{
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+}
+.colors .options{
+  display: flex;
+  justify-content: space-between;
+}
+.colors .option{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-top: 3px;
+  position: relative;
+}
+.colors .option:nth-child(1){
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+}
+.colors .option:nth-child(2){
+  background-color: #000;
+}
+.colors .option:nth-child(3){
+  background-color: #E02020;
+}
+.colors .option:nth-child(4){
+  background-color: #6DD400;
+}
+.colors .option:nth-child(5){
+  background-color: #4A98F7;
+}
+.colors .option.selected::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  height: 12px;
+  width: 12px;
+  background: inherit;
+  border-radius: inherit;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+}
+.colors .option:first-child.selected::before{
+  border-color: #ccc;
+}
+.option #color-picker{
+  opacity: 0;
+  cursor: pointer;
+}
+.buttons button{
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 11px 0;
+  font-size: 0.9rem;
+  margin-bottom: 13px;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buttons .clear-canvas{
+  color: #6C757D;
+  border: 1px solid #6C757D;
+  transition: all 0.3s ease;
+}
+.clear-canvas:hover{
+  color: #fff;
+  background: #6C757D;
+}
+.buttons .save-img{
+  background: #4A98F7;
+  border: 1px solid #4A98F7;
+}
+.drawing-board{
+  flex: 1;
+  overflow: hidden;
+}
+.drawing-board canvas{
+  width: 100%;
+  height: 100%;
+}

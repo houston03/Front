@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  background-color: #e3edf7;
+}
+
+
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+
+}
+
+nav ul {
+  text-align: center;
+
+}
+nav ul li a {
+  padding: 18px;
+
+  text-transform:uppercase;
+
+  font-size: 18px;
+
+  display: block;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+
+.nav-bar {
+  border-bottom: 2px solid rgba(000,000,000,.8);
+}
+.container3{
+  border: 2px rgba(000,000,000,.8);
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+
+* {
+  -webkit-font-smoothing: antialiased;
+
+}
+
+:root {
+  --border-radius: 10px;
+}
+
+
+
+
+
+
+
+.container4 {
+  display: flex;
+}
+
+
+
+
+
+.InputContainer {
+  width: 100%;
+}
+
+input {
+  background-color: #e3edf7;
+  padding: 16px 32px;
+  border: none;
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  color: #a9b8c9;
+  -webkit-appearance: none;
+  transition: all 240ms ease-out;
+  width: 10%;
+
+  &::placeholder {
+    color: #6d7f8f;
+  }
+
+  &:focus {
+    outline: none;
+    color: #6d7f8f;
+    background-color: lighten(#e3edf7, 3%);
+  }
+}
+
+.InputContainer {
+  --top-shadow: inset 1px 1px 3px #c5d4e3, inset 2px 2px 6px #c5d4e3;
+
+
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    left: 0;
+    top: 0;
+    display: block;
+    content: "";
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  &:before {
+    box-shadow: var(--bottom-shadow);
+  }
+
+  &:after {
+    box-shadow: var(--top-shadow);
+  }
+}

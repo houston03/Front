@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+
+html {
+  height:100%;
+background-color: black;
+}
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 61px 0;
+
+}
+
+nav ul {
+  text-align: center;
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family:  "Yu Gothic UI Light", 'Bold';
+  text-transform:uppercase;
+  color: rgba(200, 200, 200, 0.8);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+.btn1 {
+    font-family: "Yu Gothic UI Light";
+    border: none;
+    border-radius: 0;
+
+
+    transition: all 0.3s;
+    & span {
+        transition: all 0.3s;
+        tranform: scale(1, 1);
+    }
+}
+
+canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+
+}
+
+video {
+        position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 101%;
+    min-height: 101%;
+    height: auto;
+    width: 100%;
+    display: none;
+}
+
+.banner-image {
+  background-image: url(https://furman.top/uploads/posts/2023-09/1694190107_furman-top-p-chernii-robot-oboi-vkontakte-78.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+
+  border-radius: 0px;
+    margin-bottom: 20px;
+}
+.banner-image1 {
+  background-image: url(/static/img/yra.png);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+width: 600px;
+  border-radius: 12px;
+    margin-bottom: 20px;
+    float: left;
+}
+.banner-image2 {
+  background-image: url(https://newscop.com.au/wp-content/uploads/2022/08/261508392_440297574343272_7094684113706108761_n.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+width: 600px;
+  border-radius: 12px;
+    margin-bottom: 20px;
+    float: right;
+}
+.banner-image3 {
+  background-image: url(https://ucare.timepad.ru/d0f1eaf1-b082-40ef-9eb2-7319befc4d01/poster_event_1531499.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60px;
+
+  border-radius: 0px;
+    margin-bottom: 20px;
+}
+p4 {
+    margin-bottom: 300px;
+    color: rgba(200, 200, 200, 0.8);
+    font-size: 1.5rem;
+    font-family: "Yu Gothic UI Light";
+
+}
+
+.wrapper6{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.container {
+
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 80px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite, fadeinout 10s linear forwards;
+
+
+    z-index: 999;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+    z-index: 999;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+
+.wrapper6 {
+    transform: translateY(50px);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0;
+  animation: ani 3.5s forwards;
+}
