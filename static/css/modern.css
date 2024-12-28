@@ -33,7 +33,7 @@ header::before {
   transform: skewY(-3.5deg);
   background:
     linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-    url(https://get.wallhere.com/photo/Death-Stranding-Hideo-Kojima-1412911.jpg) no-repeat center
+    url(https://i.pinimg.com/originals/7f/79/44/7f7944de2344229f3abc5e7578fa5e50.jpg) no-repeat center
     ;
   background-size: cover;
   border-bottom: .2em solid #d94f5c;
@@ -50,7 +50,7 @@ header::before {
 
   background:
     linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-    url('https://yandex-images.clstorage.net/Ajm9i5408/a5afa9Zu0Yfa/e0VwkxvaliIRgZd0H_E38ihRCKLEyT6PbYLOD9OI5n5XB3ZS0zzozuvg3p7KgQ_dPmo_OiTHk44zdYBmT0STr--Q5Cb_qpZzVTEztb8wNqbphTkD4Un97NpFmSwUC-SMBYXyl7L4XI1dcemub2Toreu9W39jQdUPMiYRwerxJopJFFLAnFl1IbVBN0fdA5SXq6GrZtYcPb9ZVLv9NIo1D2eHg9Xm-l3MjyUbjH8mKM_73FlOkpLnjpF00ZOLMLYYWsVRI465B2JUQ2VGHJBlJdiTutb0DN9OG1S5bKSYNI3X1gOXFpv-Xu21eK_tVjrMW_xLnLBDpo0hFQBhmwAGKxsnMaIMKvShR5OXhp_D5zeKYZqnJU59vopn6E2FecSu1eWhVYU43kx9tqn9_DU5D_of-zwgkBbO4QczoOlih_o6lzOjblh3YWQid5XvkTXWSqMbZXdd3Cx5d1qcRFpVnyY0EneWug18LkeqLN12yGx5ndp-MTJGjnGUwYLoogQ76EQxIB9olcEFQTQG3rFFBHmiykUGT08MSBcoj7ao9t81RnPG1slNXiyXKz1clwrfGo5ZHbLiBEzxVJCxylMHiip1Q_KtecbD58Flh82SxsZrkWtkJL3ufhpkqzz0OCVvFaRRhWdqD34OlMlN3YYaHWttaV8jYIUvgnfQksrCpbsq50HjbYkVUAZDhERNo_Qn-aLJBCQcDS1LN5guZ9o0zqflcUS0KQ-O3wWZ7V3GWc_Ljco_EPJUnHG2kfPbMrYK2PVwIB0a9sFFMPQGbrIEF9sRqNQFPd9uufSqfrWblUyFJiBl9ujf7syk6V_P5MgdmC0JLCBh9V1wNUAz-YG0erolMYEt-DYiZMGWN-zy5tWroNi25O-NTYvHanzkOPUeB0dQBCZ6bFwc1yoeTwfbnZl8ao_hApV_s8VhofijN-sqRzMgjLiFEaQgNabPQPX2-7AI1La-X55bNpvdw') no-repeat center
+    url('https://i.pinimg.com/originals/6d/23/97/6d239751468ea3f4ec1bf1885084bc8b.jpg') no-repeat center
     ;
   background-size: cover;
   border-top: .2em solid #d94f5c;
@@ -98,6 +98,23 @@ html {
   height: 100%;
   background: #1c1d22;
   font-family: "Varela Round", sans-serif;
+  ::-webkit-scrollbar {
+        width: 10px; /* ширина для вертикального скролла */
+        height: 40%; /* высота для горизонтального скролла */
+        border-radius: 15px;
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: lightgray;
+        border-radius: 15px;
+
+    }
+
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: white;
+        border-radius: 15px;
+    }
 }
 
 .menu {
@@ -219,7 +236,7 @@ font-family: "Yu Gothic UI Light";
   content: "";
   display: block;
   background: white;
-  background-image: url("https://get.wallhere.com/photo/Death-Stranding-video-games-screen-shot-Kojima-Productions-Death-Stranding-Director's-Cut-2224408.jpg");
+  background-image: url("https://i.pinimg.com/originals/1c/da/74/1cda740177e19b91e30a0d9d771aa53a.jpg");
   background-size: cover;
   grid-column: -20/20;
   grid-row: -20/20;
